@@ -11,6 +11,7 @@ fetch("https://boardofhopes.somee.com/api/PromiseHandler/GetPromsies")
   .then((cards) => {
     let container = document.getElementById("warpper");
     for (let card of cards) {
-      container.prepend(carding(card.Name, card.Promise));
+      container.innerHTML =
+        carding(card.Name, card.Promise) + "\n" + container.innerHTML;
     }
   });
