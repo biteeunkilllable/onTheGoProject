@@ -46,7 +46,7 @@ submit.addEventListener("click", () => {
   let promise = document.getElementById("textarea");
   //   alert("disabled");
   submit.disabled = true;
-  fetch("http://boardofhopes.somee.com/api/PromiseHandler/AddPromise", {
+  fetch("https://boardofhopes.somee.com/api/PromiseHandler/AddPromise", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
