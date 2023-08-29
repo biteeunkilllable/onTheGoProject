@@ -53,7 +53,7 @@ submit.addEventListener("click", () => {
     },
     body: `{"Name":"${
       userNameSlot.value
-    }","DatePromised":"${parseDate()}","Promise":"${promise.value}    "}`,
+    }","DatePromised":"${parseDate()}","Promise":"${promise.value}"}`,
   })
     .then((response) => response.text())
     .then((response) => console.log(response))
