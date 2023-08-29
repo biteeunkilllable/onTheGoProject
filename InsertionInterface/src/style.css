@@ -23,12 +23,15 @@ body {
 @media (max-width: 750px) {
   .form-container {
     width: 60%;
+    margin: auto;
   }
   .form-container .form-group input {
     width: 70%;
+    margin: auto;
   }
   .form-container .form-group textarea {
     width: 70%;
+    margin: auto;
   }
 }
 .form-container button:active {
