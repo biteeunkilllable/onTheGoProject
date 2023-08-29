@@ -1,0 +1,76 @@
+@import url("fontface.css");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #101010;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #212713;
+}
+#wrap {
+  width: 80%;
+  margin: auto;
+}
+#warpper {
+  display: flex;
+  flex-wrap: wrap;
+}
+#contentwrap {
+  background: #fff;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+#sitename {
+  font: normal 46px chunk;
+  color: white;
+  text-shadow: #6c6c6c 2px 2px 2px;
+  display: block;
+  padding: 45px 0 0 0;
+  width: 60%;
+  float: left;
+}
+#sitename em {
+  font: italic 46px Georgia, "Times New Roman", Times, serif;
+}
+#top {
+  height: 145px;
+}
+h2 {
+  display: block;
+  font: bold 22px Comfortaa;
+  margin-bottom: 8px;
+}
+.card {
+  width: auto;
+  height: auto;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.card2 {
+  overflow-y: scroll;
+  color: white;
+  padding: 15px;
+  width: 300px;
+  height: 400px;
+  background-color: #1a1a1a;
+  transition: all 0.2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+.card2::-webkit-scrollbar {
+  width: 1px;
+}
