@@ -9,14 +9,19 @@ class MainNameSpace
         new ConnectionPoint().Database.EnsureCreated();
         var builder = WebApplication.CreateBuilder();
         builder.Services.AddControllers();
+        builder.Services.AddCors(builder =>
+            {
+                builder.AddDefaultPolicy(
+                    policy =>
+                    {
+                        policy.AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader();
+                    });
+            });
         var app = builder.Build();
         app.MapControllers();
-        app.UseCors(builder =>
-            {
-                builder.AllowAnyOrigin()
-                    .AllowAnyMethod()
-                    .AllowAnyHeader();
-            });
+        app.UseCors();
         app.Run();
 
     }

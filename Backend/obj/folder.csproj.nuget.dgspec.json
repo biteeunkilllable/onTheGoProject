@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "g:\\Users\\basilAhmad\\Desktop\\onTheGoProject\\Backend\\folder.csproj": {}
+    "G:\\Users\\basilAhmad\\Desktop\\onTheGoProject\\Backend\\folder.csproj": {}
   },
   "projects": {
-    "g:\\Users\\basilAhmad\\Desktop\\onTheGoProject\\Backend\\folder.csproj": {
+    "G:\\Users\\basilAhmad\\Desktop\\onTheGoProject\\Backend\\folder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\Users\\basilAhmad\\Desktop\\onTheGoProject\\Backend\\folder.csproj",
+        "projectUniqueName": "G:\\Users\\basilAhmad\\Desktop\\onTheGoProject\\Backend\\folder.csproj",
         "projectName": "folder",
-        "projectPath": "g:\\Users\\basilAhmad\\Desktop\\onTheGoProject\\Backend\\folder.csproj",
+        "projectPath": "G:\\Users\\basilAhmad\\Desktop\\onTheGoProject\\Backend\\folder.csproj",
         "packagesPath": "G:\\Users\\basilAhmad\\.nuget\\packages\\",
-        "outputPath": "g:\\Users\\basilAhmad\\Desktop\\onTheGoProject\\Backend\\obj\\",
+        "outputPath": "G:\\Users\\basilAhmad\\Desktop\\onTheGoProject\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "G:\\Users\\basilAhmad\\AppData\\Roaming\\NuGet\\NuGet.Config",

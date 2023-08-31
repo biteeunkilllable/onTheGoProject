@@ -44,6 +44,7 @@ let submit = document.getElementById("submit");
 submit.addEventListener("click", () => {
   let userNameSlot = document.getElementById("email");
   let promise = document.getElementById("textarea");
+  if (promise.value == "" || userNameSlot.value == "") throw new Error("empty");
   //   alert("disabled");
   submit.disabled = true;
   fetch("https://boardofhopes.somee.com/api/PromiseHandler/AddPromise", {
@@ -59,6 +60,6 @@ submit.addEventListener("click", () => {
     .then((response) => console.log(response))
     .catch((err) => console.error(err))
     .finally(() => {
-      submit.disabled = false;
+      location.href = "https://boardofhopes.onrender.com";
     });
 });
