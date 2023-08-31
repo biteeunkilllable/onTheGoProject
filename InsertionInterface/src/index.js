@@ -46,9 +46,10 @@ document.getElementById("submit").addEventListener("click", () => {
     document.getElementById("email").value == ""
   )
     throw new Error("empty");
+  let prom = `${document.getElementById("textarea").value}`;
   let data = {
     DatePromised: parseDate(),
-    Promise: document.getElementById("textarea").value,
+    Promise: prom,
     Name: document.getElementById("email").value,
   };
   submit.disabled = true;
