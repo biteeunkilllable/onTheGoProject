@@ -45,16 +45,18 @@ submit.addEventListener("click", () => {
   let userNameSlot = document.getElementById("email");
   let promise = document.getElementById("textarea");
   if (promise.value == "" || userNameSlot.value == "") throw new Error("empty");
-  //   alert("disabled");
+  let data = {
+    DatePromised: parseDate(),
+    Promise: Promise.value,
+    Name: userNameSlot.value,
+  };
   submit.disabled = true;
   fetch("https://boardofhopes.somee.com/api/PromiseHandler/AddPromise", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: `{"Name":"${
-      userNameSlot.value
-    }","DatePromised":"${parseDate()}","Promise":"${promise.value}"}`,
+    body: JSON.stringify(data),
   })
     .then((response) => response.text())
     .then((response) => console.log(response))
