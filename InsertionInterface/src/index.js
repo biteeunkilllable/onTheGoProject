@@ -40,18 +40,17 @@ function parseDate() {
     "Z";
   return isoString;
 }
-let submit = document.getElementById("submit");
-submit.addEventListener("click", () => {
-  let userNameSlot = document.getElementById("email");
-  let promise = document.getElementById("textarea");
-  if (promise.value == "" || userNameSlot.value == "") throw new Error("empty");
+document.getElementById("submit").addEventListener("click", () => {
+  if (
+    document.getElementById("textarea").value == "" ||
+    document.getElementById("email").value == ""
+  )
+    throw new Error("empty");
   let data = {
     DatePromised: parseDate(),
-    Promise: Promise.value,
-    Name: userNameSlot.value,
+    Promise: document.getElementById("textarea").value,
+    Name: document.getElementById("email").value,
   };
-  console.log(Promise.value);
-  console.log(Promise.value.replace("\n", ""));
   submit.disabled = true;
   fetch("https://boardofhopes.somee.com/api/PromiseHandler/AddPromise", {
     method: "POST",
