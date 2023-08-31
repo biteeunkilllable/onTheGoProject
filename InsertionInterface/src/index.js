@@ -47,7 +47,7 @@ submit.addEventListener("click", () => {
   if (promise.value == "" || userNameSlot.value == "") throw new Error("empty");
   let data = {
     DatePromised: parseDate(),
-    Promise: Promise.value,
+    Promise: Promise.value.replace("\n", ""),
     Name: userNameSlot.value,
   };
   submit.disabled = true;
