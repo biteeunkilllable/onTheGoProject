@@ -47,9 +47,11 @@ submit.addEventListener("click", () => {
   if (promise.value == "" || userNameSlot.value == "") throw new Error("empty");
   let data = {
     DatePromised: parseDate(),
-    Promise: Promise.value.replace("\n", ""),
+    Promise: Promise.value,
     Name: userNameSlot.value,
   };
+  console.log(Promise.value);
+  console.log(Promise.value.replace("\n", ""));
   submit.disabled = true;
   fetch("https://boardofhopes.somee.com/api/PromiseHandler/AddPromise", {
     method: "POST",
